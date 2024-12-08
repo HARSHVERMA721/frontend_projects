@@ -1,0 +1,141 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 300px;
+    background-color: #f9f9f9;
+}
+
+/* Icon Bar */
+.icon-bar {
+    width: 70px;
+    background-color: #555;
+    position: fixed;
+    top: 95px; /* Push icon bar down (2.5cm or ~95px) */
+    left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+.active {
+    background-color: #04AA6D; /* Active link color */
+  }
+  
+  .icon-bar .icon {
+    cursor: pointer;
+  }
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    background-color: #555;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+}
+
+.show {
+    display: block;
+}
+
+/* Form container styling */
+.form-container {
+    margin-left: 90px; /* Allow space for the icon bar */
+    margin-top: 120px;
+    padding: 20px;
+    background-color: white;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.payment-form h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.payment-form p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.payment-form input,
+.payment-form select,
+.payment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.payment-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.payment-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Radio buttons and other form elements styling */
+fieldset {
+    border:2px solid black;
+    margin: 0;
+    padding: 0;
+    border-start-end-radius:20px;
+    
+}
+
+legend {
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+    max-width: 100%;
+    min-height: 120px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+}

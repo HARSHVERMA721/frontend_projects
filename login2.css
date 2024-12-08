@@ -1,0 +1,171 @@
+/* Global styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* ===================================== Icon Bar Section ===================================== */
+/* Icon Bar */
+.icon-bar {
+    width: 70px;
+    background-color: #555;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 15;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .icon-bar a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon-bar a:hover i {
+    transform: scale(1.2); /* Hover effect to enlarge icon */
+    color: #ff9800; /* Highlight color on hover */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Active link color */
+  }
+  
+  .icon-bar .icon {
+    cursor: pointer;
+  }
+  
+/* Dropdown Menu */
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    left: 70px; /* Align the dropdown menu to the right of the icon bar */
+    top: 60px; /* Adjust the position below the hamburger icon */
+    background-color: #555;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000;
+}
+
+/* Show the dropdown menu when the hamburger icon is clicked */
+.show {
+    display: block;
+}
+
+/* Main form styling */
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+    margin-top: 120px; /* Ensure the login form starts below the icon bar */
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling for form fields */
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #4CAF50; /* Green border when focused */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Wrap styling for the button */
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styling for links */
+p a {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="payment_form.css">
+</head>
+
+<body>
+    <!-- Icon Bar Section -->
+    <div class="icon-bar">
+        <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="https://earth.google.com/web/@5.25348246,44.51245215,-2999.08951475a,33913077.32821942d,35y,-0h,0t,0r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA"><i class="fa fa-globe"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdownMenu" class="dropdown-content">
+        <a href="login2.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="payment_form.html">Support</a>
+    </div>
+
+    <!-- Payment Form Section -->
+    <div class="form-container">
+        <form action="" class="payment-form">
+            <h1>Payment Form</h1>
+            <h2>Contact Information</h2>
+            <p>Name: <input type="text" name="name" required placeholder="Your name"></p>
+            
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    <label>Male<input type="radio" name="gender" id="male"> Female<input type="radio" name="gender" id="female"></label>
+                </p>
+            </fieldset>
+            
+            <p>Address: <textarea name="address" id="address" cols="70" rows="8"  placeholder="MY address"></textarea></p>
+            <p>Email: <input type="email" name="email" id="email" placeholder="example@gmail.com"></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode" placeholder="xxxxxxx"></p>
+            
+            <h2>Payment Details</h2>
+            <p>Card Holder: <input type="text" name="card_holder" placeholder="card_holder name"></p>
+            <P>Card Accepted:
+                <i class="fa fa-cc-visa" style="font-size:24px"></i>
+                <i class="fa fa-cc-mastercard" style="font-size:24px"></i> 
+            </P>
+            <p>Card Number: <input type="number" name="card_number" placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+            <p>Card Type:
+                <select name="card_type" id="card_type">
+                    <option value="">---- Select Card Type ----</option>
+                    <option value="master_card">Master Card</option>
+                    <option value="visa">Visa</option>
+                </select>
+            </p>
+            <p>Expiration Date: <input type="date" id="expiry_date"></p>
+            <p>CVV: <input type="password" name="cvv" id="cvv"></p>
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Login Form</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login2.css">
+</head>
+
+<body>
+    <!-- Updated Icon Bar Section -->
+    <div class="icon-bar">
+        <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+        <a href="https://www.linkedin.com/in/harsh-verma-74062b233" target="_blank" aria-label="LinkedIn">
+            <i class="fa fa-linkedin-square" style="color: #0077B5;"></i>
+        </a>
+        <a href="mailto:your-email@example.com" aria-label="Email">
+            <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://github.com/HARSHVERMA721" target="_blank" aria-label="GitHub">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdownMenu" class="dropdown-content">
+        <a href="login2.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="payment_form.html">Support</a>
+    </div>
+
+    <div class="main">
+        <h1>Welcome Back!</h1>
+        <h3>Enter your login credentials</h3>
+
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+        <p>Not registered?
+            <a href="register.html" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
