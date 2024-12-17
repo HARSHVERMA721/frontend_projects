@@ -48,7 +48,7 @@ A sleek and professional payment form designed to enhance user experience.
    git clone https://github.com/your-username/frontend-projects.git
 <hr>
 🛠 Technologies Used
-HTML5: For creating the structure of the webpages.
+HTML5: For Creating the structure of the webpages.
 CSS3: For styling and layout.
 <hr>
 🌱 Future Enhancements
@@ -66,3 +66,4 @@ Your Name
 💼 Connect with me on GitHub
 
 "Frontend development is all about bringing designs to life. Let's keep building!"
+
