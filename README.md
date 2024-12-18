@@ -27,7 +27,7 @@ A modern and minimalistic login page built to practice **HTML** and **CSS**.
 - Mobile-friendly design for better accessibility.  
 
 📸 **Preview:**  
-> *(Include a screenshot or link to a hosted version of your login page)*  
+> <img src="https://github.com/HARSHVERMA721/frontend_projects/blob/5e19afe2fff17e43d2cc465e28b9e41743a7edd7/Screenshot%20(391).png"> 
 
 ### 2️⃣ **Payment Page**  
 A sleek and professional payment form designed to enhance user experience.  
@@ -37,7 +37,7 @@ A sleek and professional payment form designed to enhance user experience.
 - Styling with attention to detail for usability.  
 
 📸 **Preview:**  
->  <img src="https://github.com/HARSHVERMA721/frontend_projects/blob/5e19afe2fff17e43d2cc465e28b9e41743a7edd7/Screenshot%20(391).png"> 
+> <img src="https://github.com/HARSHVERMA721/frontend_projects/blob/3edf768f674add9eb7ec96cfc766677d11b8642b/Screenshot%20(392).png">  
 
 ---
 
