@@ -45,7 +45,7 @@ A sleek and professional payment form designed to enhance user experience.
 
 1. Clone the repository to your local machine:  
    ```bash
-   git clone https://github.com/your-username/frontend-projects.git
+   git clone https://github.com/HARSHVERMA721/frontend_projects.git
 <hr>
 🛠 Technologies Used
 HTML5: For Creating the structure of the webpages.
